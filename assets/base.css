@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+body {
+  font-family: 'Public Sans', sans-serif;
+}
+
+:root {
+  /* Pastel blue */
+  --rp-blue: #4368e2;
+  /* Pastel Green */
+  --rp-green: #60cc32;
+  /* Pastel Red */
+  --rp-red: #f35a5a;
+  /* Pastel Yellow */
+  --rp-yellow: #e9c058;
+  /* Pastel Purple */
+  --rp-purple: #aa58f1;
+  /* Dark theme color*/
+  --rp-dark: #1a202c;
+  /* Light theme color */
+  --rp-light: #f7fafc;
+
+  /* Other Fonts */
+  --rp-marker-font: 'Permanent Marker', cursive;
+
+}
