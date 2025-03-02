@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container" style="user-select: none;">
         <div class="row">
             <div class="col-md-6 col-sm-12">
                 <small class="text-muted fw-bold mb-3">
@@ -29,32 +29,58 @@ import SingleNew from './SingleNew.vue';
 const news = ref([
     {
         id: 1,
-        title: "Nueva sede de Reyes Patria",
+        title: "Ejemplo de noticia aquí",
         date: "Sábado 20 de enero de 2023",
         likes_count: 1312,
         liked: false
     },
     {
         id: 2,
-        title: "Nueva sede de Reyes Patria",
+        title: "Ejemplo de noticia aquí",
         date: "Sábado 20 de enero de 2023",
         likes_count: 2412,
         liked: false
     },
     {
         id: 3,
-        title: "Nueva sede de Reyes Patria",
+        title: "Ejemplo de noticia aquí",
         date: "Sábado 20 de enero de 2023",
         likes_count: 1312,
         liked: false
     },
     {
         id: 4,
-        title: "Nueva sede de Reyes Patria",
+        title: "Ejemplo de noticia aquí",
         date: "Sábado 20 de enero de 2023",
         likes_count: 2312,
         liked: true
     },
+    {
+        id: 5,
+        title: "Ejemplo de noticia aquí",
+        date: "Sábado 20 de enero de 2023",
+        likes_count: 1312,
+        liked: false
+    },
+    {
+        id: 6,
+        title: "Ejemplo de noticia aquí",
+        date: "Sábado 20 de enero de 2023",
+        likes_count: 1312,
+        liked: false
+    }
 ])
 
 </script>
+
+<style scoped>
+    h1 {
+        color: var(--rp-blue);
+        transition: 0.3s ease-in-out;
+    }
+
+    h1:hover {
+        transform: scale(1.01);
+        color: var(--rp-purple);
+    }
+</style>

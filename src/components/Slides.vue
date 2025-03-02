@@ -64,8 +64,8 @@ const currentSlideIndex = ref(0)
 /* Estilo para el slide activo */
 .carousel__item.active {
     transform: scale(1.1);
-    box-shadow: 0px 8px 20px rgba(128, 0, 128, 0.4);
-    border: 2px solid purple;
+    /* box-shadow: 0px 8px 20px rgba(128, 0, 128, 0.4); */
+    border: 2px solid var(--rp-blue);
     border-width: 3px;
 }
 
