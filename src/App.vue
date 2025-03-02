@@ -6,8 +6,8 @@ import Footer from './components/Footer.vue';
 
 <template>
   <Navbar />
-  <div class="container vh-100">
+  <div class="container-fluid p-0">
     <HomePage />
+    <Footer />
   </div>
-  <!-- <Footer /> -->
 </template>

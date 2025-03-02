@@ -12,6 +12,7 @@
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
     "lucide-vue-next": "^0.477.0",
+    "pinia": "^3.0.1",
     "vue": "^3.5.13",
     "vue3-carousel": "^0.14.0"
   },

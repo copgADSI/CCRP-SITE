@@ -1,26 +1,33 @@
 <template>
-    <div class="container" style="user-select: none;">
-        <div class="row">
-            <div class="col-md-6 col-sm-12">
-                <small class="text-muted fw-bold mb-3">
-                    Últimas noticias Reyes Patria
-                </small>
-                <div class="container-fluid p-0">
-                    <div class="row">
-                        <div v-for="item in news" :key="item.id" class="col-md-4 col-sm-12">
-                            <SingleNew :new="item" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 co-sm-12 align-self-center text-center">
-                <h1>
+    <hr aria-hidden="true">
+    <div class="container py-5" style="user-select: none;">
+        <div class="row align-items-center">
+            <!-- Sección de Título / Mensaje (Primero en sm, segundo en md+) -->
+            <div
+                class="col-md-6 col-sm-12 text-center order-sm-first order-md-last d-flex flex-column align-items-center">
+                <h1 class="news-title">
                     ¡Descubre las noticias que transforman a esta gran comunidad!
                 </h1>
             </div>
+
+            <!-- Sección de Noticias -->
+            <div class="col-md-6 col-sm-12 order-sm-last order-md-first">
+                <small class="fw-bold d-block mb-3" >
+                    Últimas noticias Reyes Patria
+                </small>
+                <div class="row g-3">
+                    <div v-for="item in news" :key="item.id" class="col-md-4 col-sm-6">
+                        <SingleNew :new="item" />
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <hr aria-hidden="true">
 </template>
+
+
+
 <script setup>
 
 import { ref } from 'vue';
@@ -72,15 +79,3 @@ const news = ref([
 ])
 
 </script>
-
-<style scoped>
-    h1 {
-        color: var(--rp-blue);
-        transition: 0.3s ease-in-out;
-    }
-
-    h1:hover {
-        transform: scale(1.01);
-        color: var(--rp-purple);
-    }
-</style>

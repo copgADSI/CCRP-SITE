@@ -1,1 +1,116 @@
 @import 'base.css';
+/* Asegúrate de que 'base.css' contenga solo estilos generales */
+
+/* Variables globales de Bootstrap */
+:root {
+    --bs-body-bg: #ffffff;
+    --bs-body-color: #000000;
+    --bs-body-font-family: "Arial", sans-serif;
+}
+
+/* Tema oscuro */
+html[data-theme="dark"] {
+    --bs-body-bg: #2C2F33   ;
+    --bs-body-color: #ffffff;
+    /*  --bs-body-font-family: "Courier New", monospace; */
+}
+
+/* Tema claro */
+html[data-theme="light"] {
+    --bs-body-bg: #ffffff;
+    --bs-body-color: #000000;
+    /* --bs-body-font-family: "Arial", sans-serif; */
+}
+
+/* Aplicar cambios a todo el sistema */
+body {
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    font-family: var(--bs-body-font-family);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Ajustes de navbar y botones */
+.navbar {
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Ajustar color de los spans */
+span, span.card-title, span.card-text {
+    color: var(--bs-body-color);
+    transition: color 0.3s;
+
+    &.text-muted {
+        color: #6c757d;
+    }
+}
+
+/* Ajustar botones */
+.btn {
+    border-color: var(--bs-body-color);
+    color: var(--bs-body-color);
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--bs-body-color);
+    color: var(--bs-body-bg);
+}
+
+
+.text-muted {
+    color: var(--bs-body-color) !important;
+    opacity: 0.6;
+    /* Para mantener el efecto "muted" */
+    transition: color 0.3s;
+}
+
+.navbar .dropdown-toggle::after {
+    filter: invert(38%) sepia(65%) saturate(693%) hue-rotate(243deg) brightness(95%) contrast(96%);
+}
+
+a {
+    color: var(--bs-body-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a.nav-link {
+    color: var(--bs-body-color);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+a.nav-link:hover {
+    color: var(--rp-purple);
+    transform: scale(1.05);
+}
+
+/* Enlace activo */
+a.nav-link.show {
+    color: var(--rp-purple);
+    border-bottom: 2px solid var(--rp-purple);
+    padding-bottom: 2px;
+    transition: border-bottom 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* ------------------------- */
+/*  Chevron de dropdowns     */
+/* ------------------------- */
+
+.navbar .dropdown-toggle::after {
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    filter: invert(38%) sepia(65%) saturate(693%) hue-rotate(243deg) brightness(95%) contrast(96%);
+}
+
+/* Rotar chevron al abrir dropdown */
+.navbar .dropdown-toggle[aria-expanded="true"]::after {
+    transform: rotate(180deg);
+    filter: invert(60%) sepia(80%) saturate(900%) hue-rotate(243deg) brightness(120%) contrast(105%);
+}
+a.dropdown-item {
+    color: var(--bs-body-color);
+    transition: color 0.3s ease-in-out;
+}
