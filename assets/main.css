@@ -1,11 +1,12 @@
 @import 'base.css';
-/* Asegúrate de que 'base.css' contenga solo estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&family=League+Spartan:wght@100..900&family=Mitr:wght@200;300;400;500;600;700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 /* Variables globales de Bootstrap */
 :root {
     --bs-body-bg: #ffffff;
     --bs-body-color: #000000;
     --bs-body-font-family: "Arial", sans-serif;
+    --bs-body-font-chau: 'Chau Philomene One', sans-serif;
 }
 
 /* Tema oscuro */
@@ -28,6 +29,7 @@ body {
     color: var(--bs-body-color);
     font-family: var(--bs-body-font-family);
     transition: background-color 0.3s, color 0.3s;
+    font-family: 'Chau Philomene One', sans-serif;
 }
 
 /* Ajustes de navbar y botones */
@@ -37,7 +39,7 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* Ajustar color de los spans */
+/* color de los spans */
 span, span.card-title, span.card-text {
     color: var(--bs-body-color);
     transition: color 0.3s;
