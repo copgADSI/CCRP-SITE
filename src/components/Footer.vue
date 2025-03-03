@@ -11,9 +11,9 @@
               frecuentes</small></a>
         </div>
         <div class="d-flex justify-content-center mt-2 mt-sm-0">
-          <Facebook class="fw-bold text-decoration-none text-muted mx-1" size="20" />
-          <Instagram class="fw-bold text-decoration-none text-muted mx-1" size="20" />
-          <Twitter class="fw-bold text-decoration-none text-muted mx-1" size="20" />
+          <Facebook class="fb fw-bold text-decoration-none text-muted mx-1" size="20"/>
+          <Instagram class="ins fw-bold text-decoration-none text-muted mx-1" size="20" />
+          <X class="x fw-bold text-decoration-none text-muted mx-1" size="22"/>
         </div>
       </div>
       <p class="fw-semibold text-muted"><small>© {{ new Date().getFullYear() }} - Todos los derechos reservados</small>
@@ -24,7 +24,40 @@
 
 
 <script setup>
-import { Facebook, Instagram, Twitter } from 'lucide-vue-next';
+import { Facebook, Instagram, X } from 'lucide-vue-next';
 
 
 </script>
+
+<style scoped> 
+.fb {
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.fb:hover {
+    transform: scale(1.1);
+    color: var(--rp-blue) !important;
+}
+
+.ins {
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.ins:hover {
+    transform: scale(1.1);
+    color: var(--rp-blue) !important;
+}
+
+.x {
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.x:hover {
+    transform: scale(1.1);
+    color: var(--rp-blue) !important;
+}
+
+</style>

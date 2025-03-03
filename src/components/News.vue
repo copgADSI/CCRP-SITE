@@ -5,14 +5,14 @@
             <!-- Sección de Título / Mensaje (Primero en sm, segundo en md+) -->
             <div
                 class="col-md-6 col-sm-12 text-center order-sm-first order-md-last d-flex flex-column align-items-center">
-                <h1 class="news-title">
+                <h1 class="news-title" style="color: var(--rp-blue);">
                     ¡Descubre las noticias que transforman a esta gran comunidad!
                 </h1>
             </div>
 
             <!-- Sección de Noticias -->
             <div class="col-md-6 col-sm-12 order-sm-last order-md-first">
-                <small class="fw-bold d-block mb-3" >
+                <small class="fw-bold d-block mb-3 text-muted" >
                     Últimas noticias Reyes Patria
                 </small>
                 <div class="row g-3">

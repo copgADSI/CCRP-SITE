@@ -1,11 +1,28 @@
 <template>
-    <div class="col-md-3 col-sm-12 my-2">
-        <div class="card p-3">
-            <div class="card-body text-center fw-bold">
-                Ejemplo contribuyente
+    <div class="container col-md-3 col-sm-12 my-2">
+        <div class="card-container card p-3">
+            <div class="card-body text-center">
+                <span class="fw-semibold text-muted">
+                    Ejemplo contribuyente
+                </span>
             </div>
         </div>
     </div>
 </template>
+<style scoped>
+    .card-container { 
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+    }
+
+    .container {
+        user-select: none;
+    }
+
+    .card-container:hover {
+        transform: scale(1.03);
+    }
+    
+</style>
 <script setup>
 </script>

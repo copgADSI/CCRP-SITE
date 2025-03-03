@@ -1,7 +1,7 @@
 <template>
     <hr>
-    <section class="about-section">
-        <div class="container">
+    <section class="about-section"> 
+        <div class="container" style="user-select: none;">  
             <div class="row align-items-center">
                 <!-- Imagen ocupa todo el espacio disponible -->
                 <div class="col-md-6">
@@ -13,7 +13,7 @@
                 <!-- Contenido con animación -->
                 <div class="col-md-6 text-center text-md-start content">
                     <h1 class="animated-title">Nosotros</h1>
-                    <p class="animated-text">
+                    <p class="animated-text text-muted">
                         Somos una institución educativa que forma estudiantes integralmente en ética, intelecto, medio
                         ambiente, comunicación, físico y socio-afectivo, mediante una metodología innovadora y acorde
                         con
@@ -53,7 +53,7 @@
 
 /* Efecto zoom en hover */
 .img-full:hover {
-    /* transform: scale(1.05); */
+    transform: scale(1.01);
 }
 
 /* Contenido alineado */

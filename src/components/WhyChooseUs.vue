@@ -3,7 +3,7 @@
         <div class="row">
             <!-- Título -->
             <div class="col-md-6 col-sm-12 text-center align-self-center mb-4">
-                <h1 >¿Por qué elegirnos?</h1>
+                <h1 style="color: var(--rp-blue);">¿Por qué elegirnos?</h1>
             </div>
 
             <div class="col-md-6 col-sm-12 align-self-center text-center">
@@ -61,11 +61,6 @@ import { GraduationCap, CheckCircle, Telescope } from 'lucide-vue-next';
     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-.why-us-title:hover {
-    transform: scale(1.05);
-    color: var(--rp-purple);
-}
-
 /* Íconos */
 .icon {
     color: var(--rp-green);
@@ -74,7 +69,7 @@ import { GraduationCap, CheckCircle, Telescope } from 'lucide-vue-next';
 
 .icon:hover {
     transform: scale(1.1);
-    color: var(--rp-purple);
+    color: var(--rp-blue);
 }
 
 /* Contenedor de cada característica */
@@ -91,13 +86,11 @@ import { GraduationCap, CheckCircle, Telescope } from 'lucide-vue-next';
 
 /* Texto */
 p {
-    font-size: 1.1rem;
-    font-weight: 500;
+    font-size: 1.02rem;
     color: var(--bs-body-color);
-    transition: transform 0.3s ease-in-out;
 }
 
-p:hover {
+/* p:hover {
     transform: scale(1.02);
-}
+} */
 </style>

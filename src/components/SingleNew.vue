@@ -1,7 +1,7 @@
 <template>
     <div class="card rounded-4 shadow my-2">
         <div class="card-header d-flex justify-content-between">
-            <Heart size="20" class="cursor-pointer" :fill="props.new.liked ? 'red' : 'none'"
+            <Heart size="20" style="cursor: pointer;" :fill="props.new.liked ? 'red' : 'none'"
                 :class="{ 'text-danger': props.new.liked }" />
             <small class="fw-semi-bold text-danger"> {{ props.new.likes_count }} Me gusta </small>
         </div>
@@ -39,3 +39,7 @@ const props = defineProps({
 })
 
 </script>
+
+<style scoped>
+
+</style>
