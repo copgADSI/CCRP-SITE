@@ -116,3 +116,11 @@ a.dropdown-item {
     color: var(--bs-body-color);
     transition: color 0.3s ease-in-out;
 }
+
+button.navbar-toggler{
+   
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    transition: background-color 0.3s, color 0.3s;
+    
+}

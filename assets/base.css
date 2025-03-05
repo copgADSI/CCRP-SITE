@@ -20,4 +20,8 @@ body {
   /* Light theme color */
   --rp-light: #f7fafc;
 
+  --rp-gray-dark: #343a40;
+  --rp-light-gray: #f8f9fa;
+  --rp-gray: #6c757d;
+
 }
