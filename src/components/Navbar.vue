@@ -8,18 +8,19 @@
       <div class="d-flex align-items-center">
         <!-- Logo -->
         <a class="navbar-brand d-flex align-items-center" href="#">
-          <img src="/assets/media/logo.png" alt="Logo" class="logo me-2" />
-          
+          <img src="/assets/media/logo.png" alt="Logo" class="logo m-1" />
         </a>
-        <div style="user-select: none; cursor: pointer;">
-            <div class="title d-one d-md-block">
-                <span>Colegio Cooperativo</span >
-                    <br>
-                <span>Reyes Patria</span>
-            </div>
-            <div class="phrase text-center d-none d-md-block">
-                <small style="font-size: 12px;" class="text-muted">"Un colegio bendecido por Dios"</small>
-            </div>
+        <div style="user-select: none; cursor: pointer">
+          <div class="title d-one d-md-block">
+            <span>Colegio Cooperativo</span>
+            <br />
+            <span>Reyes Patria</span>
+          </div>
+          <div class="phrase text-center d-none d-md-block">
+            <small style="font-size: 12px" class="text-muted"
+              >"Un colegio bendecido por Dios"</small
+            >
+          </div>
         </div>
       </div>
       <button
@@ -34,7 +35,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav align-items-center ms-auto">
           <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
@@ -85,7 +86,6 @@
               </li>
             </ul>
           </li>
-
           <!-- Ajuste para dropdowns en los extremos -->
           <li class="nav-item dropdown">
             <a
@@ -119,15 +119,42 @@
               </li>
             </ul>
           </li>
-          <!-- toggle theme -->
-          <button @click="themeStore.toggleTheme" class="theme-toggle btn">
-            <Sun v-if="!isDark" />
-            <Moon v-else />
-          </button>
+          <div class="d-flex flex-row">
+            <div class="d-flex flex-row flex-column">
+              <!-- toggle theme -->
+              <button @click="themeStore.toggleTheme" class="theme-toggle btn">
+                <Sun v-if="!isDark" />
+                <Moon v-else />
+              </button>
+            </div>
+          </div>
         </ul>
       </div>
     </div>
   </nav>
+  <button class="floating-button">
+    <a href="https://reyespatria.controlacademico.com/login.php">
+      <img
+        src="/assets/media/ca.png"
+        alt="ca"
+        width="30"
+        height="20"
+        class="m-1"
+      />
+    </a>
+  </button>
+
+  <button class="floating-button-2">
+    <a href="https://www.mipagoamigo.com/MPA_WebSite/ServicePayments/StartPayment">
+      <img
+        src="/assets/media/pse.png"
+        alt="pse"
+        width="30"
+        height="30"
+        class="m-1"
+      />
+    </a>
+  </button>
 </template>
 
 <script setup>
@@ -146,14 +173,14 @@ const { isDark } = storeToRefs(themeStore);
 }
 
 .title {
-    text-align: center;
-    font-size: 20px;
-    font-weight: 600;
-    transition: 0.3s ease-in-out;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
 }
 
 .title:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .logo:hover {
@@ -161,11 +188,12 @@ const { isDark } = storeToRefs(themeStore);
 }
 
 .phrase {
-    font-weight: 400;
-    font-size: medium;
+  font-weight: 400;
+  font-size: medium;
 }
 
 .theme-toggle {
+  display: flex;
   border: none;
   cursor: pointer;
   font-size: 20px;
@@ -201,5 +229,70 @@ html[data-theme="light"] {
     width: 100%;
     text-align: center;
   }
+}
+
+.years-container {
+  font-family: var(--rp-marker-font);
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+}
+
+.number {
+  font-size: 20px;
+  color: var(--rp-yellow);
+  position: relative;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.text {
+  font-size: 13px;
+  color: var(--rp-blue);
+  text-transform: uppercase;
+  text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.floating-button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px; /* Botón inferior */
+  background-color: transparent;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, background-color 0.3s;
+}
+
+.floating-button-2 {
+  position: fixed;
+  right: 20px;
+  bottom: 20px; /* Botón inferior */
+  background-color: transparent;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, background-color 0.3s;
+  bottom: 80px; 
+}
+
+.floating-button-2:hover{
+  background-color: var(--rp-blue);
+  transform: scale(1.1);
+}
+.floating-button:hover {
+  background-color: var(--rp-green);
+  transform: scale(1.1);
 }
 </style>

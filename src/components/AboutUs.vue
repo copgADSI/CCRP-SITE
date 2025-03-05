@@ -13,7 +13,7 @@
                 <!-- Contenido con animación -->
                 <div class="col-md-6 text-center text-md-start content">
                     <h1 class="animated-title">Nosotros</h1>
-                    <p class="animated-text text-muted">
+                    <p class="animated-text">
                         Somos una institución educativa que forma estudiantes integralmente en ética, intelecto, medio
                         ambiente, comunicación, físico y socio-afectivo, mediante una metodología innovadora y acorde
                         con
