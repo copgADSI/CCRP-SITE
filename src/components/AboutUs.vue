@@ -13,11 +13,10 @@
                 <!-- Contenido con animación -->
                 <div class="col-md-6 text-center text-md-start content">
                     <h1 class="animated-title">Nosotros</h1>
-                    <p class="animated-text">
+                    <p class="animated-text text-muted-custom">
                         Somos una institución educativa que forma estudiantes integralmente en ética, intelecto, medio
                         ambiente, comunicación, físico y socio-afectivo, mediante una metodología innovadora y acorde
-                        con
-                        los avances científicos y humanistas.
+                        con los avances científicos y humanistas.
                     </p>
                 </div>
             </div>
@@ -74,7 +73,6 @@
 .animated-text {
     font-size: 1.1rem;
     font-weight: 500;
-    color: var(--bs-body-color);
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 1s ease-out forwards 0.3s;

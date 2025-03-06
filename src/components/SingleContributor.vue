@@ -2,7 +2,7 @@
     <div class="container col-md-3 col-sm-12 my-2">
         <div class="card-container card p-3">
             <div class="card-body text-center">
-                <span class="fw-semibold text-muted">
+                <span class="fw-semibold text-muted-custom">
                     Ejemplo contribuyente
                 </span>
             </div>
@@ -21,6 +21,7 @@
 
     .card-container:hover {
         transform: scale(1.03);
+        border: 0.5px solid var(--rp-blue)
     }
     
 </style>

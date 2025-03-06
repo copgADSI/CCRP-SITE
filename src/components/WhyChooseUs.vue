@@ -13,7 +13,7 @@
                         <CheckCircle class="icon" size="40" />
                     </div>
                     <div class="col-md-10 col-sm-12 order-sm-last order-md-first">
-                        <p>
+                        <p class="text-muted-custom"> 
                             Nuestra educación se basa en un modelo de amor enfocado en el desarrollo integral de niños y
                             jóvenes.
                         </p>
@@ -25,7 +25,7 @@
                         <GraduationCap class="icon" size="40" />
                     </div>
                     <div class="col-md-10 col-sm-12 order-sm-last order-md-first">
-                        <p>
+                        <p class="text-muted-custom">
                             Nuestro modelo educativo se basa en una metodología innovadora, alineada con los avances
                             científicos, tecnológicos y humanistas, fundamentada en la urbanidad y la libertad.
                         </p>
@@ -37,7 +37,7 @@
                         <Telescope class="icon" size="40" />
                     </div>
                     <div class="col-md-10 col-sm-12 order-sm-last order-md-first">
-                        <p>
+                        <p class="text-muted-custom">
                             Nuestro modelo educativo se basa en una metodología innovadora, alineada con los avances
                             científicos, tecnológicos y humanistas, fundamentada en la urbanidad y la libertad.
                         </p>

@@ -12,7 +12,7 @@
 
             <!-- Sección de Noticias -->
             <div class="col-md-6 col-sm-12 order-sm-last order-md-first">
-                <small class="fw-bold d-block mb-3 text-muted" >
+                <small class="fw-bold d-block mb-3 text-muted-custom" >
                     Últimas noticias Reyes Patria
                 </small>
                 <div class="row g-3">

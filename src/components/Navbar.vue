@@ -17,7 +17,7 @@
             <span>Reyes Patria</span>
           </div>
           <div class="phrase text-center d-none d-md-block">
-            <small style="font-size: 12px" class="text-muted"
+            <small style="font-size: 12px" class="text-muted-custom"
               >"Un colegio bendecido por Dios"</small
             >
           </div>
@@ -132,29 +132,6 @@
       </div>
     </div>
   </nav>
-  <button class="floating-button">
-    <a href="https://reyespatria.controlacademico.com/login.php">
-      <img
-        src="/assets/media/ca.png"
-        alt="ca"
-        width="30"
-        height="20"
-        class="m-1"
-      />
-    </a>
-  </button>
-
-  <button class="floating-button-2">
-    <a href="https://www.mipagoamigo.com/MPA_WebSite/ServicePayments/StartPayment">
-      <img
-        src="/assets/media/pse.png"
-        alt="pse"
-        width="30"
-        height="30"
-        class="m-1"
-      />
-    </a>
-  </button>
 </template>
 
 <script setup>
@@ -250,49 +227,5 @@ html[data-theme="light"] {
   color: var(--rp-blue);
   text-transform: uppercase;
   text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
-}
-
-.floating-button {
-  position: fixed;
-  right: 20px;
-  bottom: 20px; /* Botón inferior */
-  background-color: transparent;
-  border: none;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: transform 0.2s ease-in-out, background-color 0.3s;
-}
-
-.floating-button-2 {
-  position: fixed;
-  right: 20px;
-  bottom: 20px; /* Botón inferior */
-  background-color: transparent;
-  border: none;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: transform 0.2s ease-in-out, background-color 0.3s;
-  bottom: 80px; 
-}
-
-.floating-button-2:hover{
-  background-color: var(--rp-blue);
-  transform: scale(1.1);
-}
-.floating-button:hover {
-  background-color: var(--rp-green);
-  transform: scale(1.1);
 }
 </style>

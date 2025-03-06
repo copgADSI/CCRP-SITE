@@ -18,14 +18,19 @@ const carouselConfig = ref({
 })
 
 const currentSlideIndex = ref(0)
+
+const images = ref([
+    '../assets/media/prospecto.jpg'
+])
+
 </script>
 
 <template>
     <div class="carousel-container my-4">
         <Carousel v-bind="carouselConfig" v-model="currentSlideIndex">
-            <Slide v-for="(slide, index) in 5" :key="index">
+            <Slide v-for="(image, index) in images" :key="index">
                 <div class="carousel__item" :class="{ active: index === currentSlideIndex }">
-                    Imagen slider {{ slide + 1 }}
+                    <img :src="image" :alt="'Imagen slider ' + (index + 1)" class="carousel__image">
                 </div>
             </Slide>
 
@@ -53,20 +58,28 @@ const currentSlideIndex = ref(0)
     align-items: center;
     border-radius: 10px;
     transition: all 0.4s ease-in-out;
-    background: white;
     font-weight: bold;
     font-size: 16px;
     text-align: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    border: 2px solid gray;
+    border: 4px solid gray;
+    width: 100%;
+    overflow: hidden;
 }
 
 /* Estilo para el slide activo */
 .carousel__item.active {
     transform: scale(1.1);
-    /* box-shadow: 0px 8px 20px rgba(128, 0, 128, 0.4); */
-    border: 2px solid var(--rp-blue);
-    border-width: 3px;
+    border: 1px solid var(--rp-blue);
+    border-width: 1px;
+}
+
+.carousel__image {
+    width: auto;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    border-radius: 10px;
 }
 
 /* Estilos responsivos */
@@ -94,12 +107,12 @@ const currentSlideIndex = ref(0)
     }
 }
 
-/* Asegura que los elementos del carrusel no se superpongan */
+/* elementos del carrusel no se superpongan */
 .carousel-container :deep(.carousel__viewport) {
     overflow: visible;
 }
 
-/* Ajusta la posición de los slides */
+/* posición de los slides */
 .carousel-container :deep(.carousel__track) {
     display: flex;
     align-items: center;
