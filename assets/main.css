@@ -5,7 +5,6 @@
 :root {
     --bs-body-bg: #ffffff;
     --bs-body-color: #000000;
-    --bs-body-font-family: "Arial", sans-serif;
     --bs-body-font-chau: 'Chau Philomene One', sans-serif;
 }
 
@@ -27,9 +26,8 @@ html[data-theme="light"] {
 body {
     background-color: var(--bs-body-bg);
     color: var(--bs-body-color);
-    font-family: var(--bs-body-font-family);
     transition: background-color 0.3s, color 0.3s;
-    font-family: 'Chau Philomene One', sans-serif;
+    font-family: var(--bs-body-font-chau);
 }
 
 /* Ajustes de navbar y botones */
@@ -62,11 +60,12 @@ span, span.card-title, span.card-text {
 }
 
 
-.text-muted {
-    color: var(--bs-body-color) !important;
-    opacity: 0.6;
-    /* Para mantener el efecto "muted" */
-    transition: color 0.3s;
+.text-muted-custom {
+    color: rgba(0,0,0,0.6);
+}
+
+[data-theme="dark"] .text-muted-custom {
+    color: rgba(255,255,255,0.6);
 }
 
 .navbar .dropdown-toggle::after {
