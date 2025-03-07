@@ -1,5 +1,5 @@
 <template>
-    <button class="floating-button">
+    <button v-bind="$attrs" class="floating-button">
     <a href="https://reyespatria.controlacademico.com/login.php">
       <img
         src="/assets/media/ca.png"
@@ -11,7 +11,7 @@
     </a>
   </button>
 
-  <button class="floating-button-2">
+  <button v-bind="$attrs" class="floating-button-2">
     <a href="https://www.mipagoamigo.com/MPA_WebSite/ServicePayments/StartPayment">
       <img
         src="/assets/media/logo-pse.webp"

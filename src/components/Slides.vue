@@ -83,26 +83,37 @@ const images = ref([
 }
 
 /* Estilos responsivos */
+.carousel__image {
+    width: 100%;
+    height: auto; /* Mantiene la proporción original */
+    object-fit: contain; /* Ajusta la imagen dentro sin recortarla */
+    border-radius: 10px;
+}
+
+/* Ajustes para móviles */
 @media (max-width: 600px) {
     .carousel__item {
-        width: 180px;
-        height: 180px;
+        width: 90%; /* Ajusta al ancho de la pantalla */
+        height: auto; /* Se adapta a la imagen */
         font-size: 14px;
+        padding: 10px; /* Agrega un pequeño margen interno */
     }
 }
 
+/* Ajustes para tablets */
 @media (min-width: 601px) and (max-width: 1023px) {
     .carousel__item {
-        width: 350px;
-        height: 350px;
+        width: 80%;
+        height: auto;
         font-size: 16px;
     }
 }
 
+/* Ajustes para pantallas grandes */
 @media (min-width: 1024px) {
     .carousel__item {
         width: 70%;
-        height: 400px;
+        height: auto;
         font-size: 18px;
     }
 }

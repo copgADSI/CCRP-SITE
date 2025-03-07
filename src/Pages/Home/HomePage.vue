@@ -12,7 +12,7 @@
     <section v-bind:class="{'bg-light': !isDark}">
         <Contributors />
     </section>
-    <FloatingButtons v-bind:class="{'bg-dark': isDark, 'bg-light': isLight}" />
+    <FloatingButtons v-bind:class="{'bg-dark': isDark}" />
 </template>
 <script setup>
 import AboutUs from '../../components/AboutUs.vue';
